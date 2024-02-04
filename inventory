@@ -1,4 +1,5 @@
 
+54.145.118.177
 [mangodb]
 roboshop-us-dev-db-mangodb-01.joindevopsgroup.online
 [mysql]
@@ -11,6 +12,8 @@ roboshop-us-dev-db-user-01.joindevopsgroup.online
 [db:children]
 mangodb
 mysql
+
+
 [app:children]
 cart
 user
