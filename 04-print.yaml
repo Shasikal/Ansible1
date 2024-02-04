@@ -1,0 +1,6 @@
+-name: print
+ hosts: mangodb
+ tasks:
+  -name:print the message
+   ansible.builtin.debug:
+   msg: "hello world"

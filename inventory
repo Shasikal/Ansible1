@@ -1,0 +1,16 @@
+
+[mangodb]
+roboshop-us-dev-db-mangodb-01.joindevopsgroup.online
+[mysql]
+roboshop-us-dev-db-mysql-01.joindevopsgroup.online
+[cart]
+roboshop-us-dev-db-cart-01.joindevopsgroup.online
+[user]
+roboshop-us-dev-db-user-01.joindevopsgroup.online
+
+[db:children]
+mangodb
+mysql
+[app:children]
+cart
+user
