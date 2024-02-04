@@ -1,11 +1,14 @@
--name: install and run node
- hosts: localhost
- tasks:
- -name: install nginx
-  ansible.builtin.yum:
-  name: nginx
-  state: installed
- -name: starting nginx
-  ansible.builtin.service:
-  state: started
-  
+- name: install and run node
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  - name: starting nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+
+
