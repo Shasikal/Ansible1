@@ -1,11 +1,14 @@
--name: variable
- hosts: mangodb
- vars:
- COURSE: devops
- TRAINER: shasi
- DURATION: 110
- tasks:
- -name: printing
-  ansible.builtin.debug:
-  msg: "helli, i am learning {{COURSE}}, trainer is {{TRAINER}} and duration {{DURATION}}"
+- name: variable
+  hosts: localhost
+  vars:
+   COURSE: devops
+   TRAINER: shasi
+   DURATION: 110
+  tasks:
+  - name: printing
+    ansible.builtin.debug:
+      msg: "helli, i am learning {{COURSE}}, trainer is {{TRAINER}} and duration {{DURATION}}"
  
+
+
+
