@@ -1,10 +1,13 @@
 - name: variable
   hosts: localhost
   vars:
-   COURSE: devops
-   TRAINER: shasi
-   DURATION: 110
-  tasks:
+    COURSE: devops
+    TRAINER: shasi
+    DURATION: 110
+  tasks: 
+  - name: print hellow world
+    ansible.builtin.debug:
+    msg: "hello"
   - name: printing
     ansible.builtin.debug:
       msg: "helli, i am learning {{COURSE}}, trainer is {{TRAINER}} and duration {{DURATION}}"
