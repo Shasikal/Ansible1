@@ -5,9 +5,9 @@
     TRAINER: shasi
     DURATION: 110
   tasks: 
-  - name: print hellow world
+  - name: print the message
     ansible.builtin.debug:
-    msg: "hello"
+      msg: "hello world"
   - name: printing
     ansible.builtin.debug:
       msg: "helli, i am learning {{COURSE}}, trainer is {{TRAINER}} and duration {{DURATION}}"
