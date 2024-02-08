@@ -6,5 +6,4 @@
       NAME: shasi
       COURSE: Devops
     ansible.builtin.debug:
-     msg: "helli, i am {{NAME}}, Learning is {{COURSE}}
-     
+      msg: "helli, i am {{NAME}}, and  Learning {{COURSE}}"
