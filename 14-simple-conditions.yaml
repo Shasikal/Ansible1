@@ -1,0 +1,12 @@
+- name: conditions
+  hosts: localhost
+  vars:
+  NAME: devops
+  tasks:
+  - name: applying conditions
+    ansible.builtin.debug:
+     msg: "name is {{NAME}}"
+    when: NAME == "devops"
+
+
+    

@@ -1,0 +1,11 @@
+- name: advanced loops
+  hosts: localhost
+  tasks:
+  - name: installing and uninstalling pacakges
+    ansible.builtin.debug:
+     name= "{{name.item}}"
+     state= "{{status.item}}"
+  loop
+  - {name: 'nginx', state: 'absent'}
+  - {nameL 'postfix', state: 'installed'}  
+  

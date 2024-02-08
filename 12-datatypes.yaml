@@ -1,0 +1,23 @@
+- name: datatypes
+  hosts: localhost
+  vars:
+  - AGE: 30
+  - name: shasi
+  - isdevosp: true
+  - course:
+    - aws
+    - devops
+    - linux
+  - experirnce:
+    - AWS 2
+    - devosp 5
+    - linux 3
+  tasks:
+  - name: printing number
+    ansible.builtin.debug:
+     msg: "the age is {{AGE}}"
+  - name: printing string
+    ansible.buitin.debug:
+     msg: "the name is {{name}}"
+  - name: 
+  

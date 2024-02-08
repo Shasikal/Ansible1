@@ -1,0 +1,17 @@
+- name: varaible through promt
+  hosts: localhost
+  vars_promt:
+  - name: USERNAME
+    promt: please enter your username
+    private: false
+  - name: PASSWORD
+    promt:
+    private: true
+  tasks:
+  - name: print values
+    ansible.builtin.debug:
+     msg: "username: {{USERNAME}}", password:{{PASSWORD}}
+
+    
+
+

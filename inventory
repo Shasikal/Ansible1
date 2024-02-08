@@ -2,6 +2,8 @@
 54.145.118.177
 [mangodb]
 54.145.118.177
+MANGO_USERNAME=Shasi
+
 roboshop-us-dev-db-mangodb-01.joindevopsgroup.online
 [mysql]
 roboshop-us-dev-db-mysql-01.joindevopsgroup.online

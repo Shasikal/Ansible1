@@ -1,0 +1,16 @@
+- name: precedence value
+  hosts: localhost
+  vars:
+    NAME: shasi.play
+  vars-files:
+  - variables.yaml
+  vars-promt:
+  - name: NAME
+    promt: please enter username
+    private: true
+  tasks:
+  - name: print name
+    vars:
+    NAME: shasi.task
+    ansible.builtin.debug:
+     msg: "my name is: {{NAME}}"

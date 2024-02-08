@@ -1,0 +1,10 @@
+- name: vars at task level
+  hosts: localhost
+  tasks:
+  - name: printing vars at task
+    vars:
+      NAME: shasi
+      COURSE: Devops
+    ansible.builtin.debug:
+     msg: "helli, i am {{NAME}}, Learning is {{COURSE}}
+     
