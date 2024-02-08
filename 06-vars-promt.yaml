@@ -1,4 +1,4 @@
-- name: varaible through promt
+- name: varaible
   hosts: localhost
   vars_promt:
   - name: USERNAME
