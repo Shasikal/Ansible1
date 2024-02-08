@@ -19,5 +19,5 @@
   - name: printing string
     ansible.buitin.debug:
      msg: "the name is {{name}}"
-  - name: 
+
   
