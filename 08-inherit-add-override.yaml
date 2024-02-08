@@ -6,10 +6,10 @@
   task:
   - name: inherit the values from play level
     ansible.builtin.debug:
-     msg: "MONEY{{monet}}, LAND{{land}}"
+      msg: "MONEY{{monet}}, LAND{{land}}"
   - name: inherit the valuesd from play and add and override
     vars:
     - money: "20000rs"
       houses: "3houses" 
     ansible.builtin.debug:
-    msg: "MONEY{{monet}}, LAND{{land}}, HOUSES{{houses}}"
+      msg: "MONEY{{monet}}, LAND{{land}}, HOUSES{{houses}}"
