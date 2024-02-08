@@ -1,6 +1,6 @@
 - name: varaible
   hosts: localhost
-  vars_promt:
+  vars:
   - name: USERNAME
     promt: please enter your username
     private: false
